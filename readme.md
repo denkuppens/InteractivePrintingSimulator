@@ -6,7 +6,6 @@ This is a inkjet printing simulator which runs in locally in modern web browsers
 # Installation
 Download the source from the repository by clicking this [link](https://github.com/denkuppens/InteractivePrintingSimulator/archive/refs/heads/master.zip), then unpack the zip file and open the file: <code>PrintSimulator.html</code> in your web browser.
 
-<!--https://github.com/denkuppens/InteractivePrintingSimulator/archive/refs/heads/master.zip -->
 
 ## Application Features
 ### Main features
