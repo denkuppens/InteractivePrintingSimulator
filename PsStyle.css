@@ -1,0 +1,281 @@
+
+
+	/*
+	*{
+		box-sizing:border-box;
+	}
+
+	// flexbox container 
+	.holy-grail-flexbox {
+		display:flex;
+		flex-wrap:wrap;
+	}
+
+	// columns (mobile)
+	.holy-grail-flexbox > * {
+		width:100%;
+		padding:none;
+	}
+
+	// background colors 
+	.holy-grail-flexbox > .header {background:#f97171}
+	.holy-grail-flexbox > .main-content {background:#fff}
+	.holy-grail-flexbox > .left-sidebar {background:#F8F8FF}
+	.holy-grail-flexbox > .right-sidebar {background:#c5ed77}
+	.holy-grail-flexbox > .footer {background:#72c2f1}
+
+	// tablet breakpoint 
+
+	//@media (min-width:768px) {
+	//	.holy-grail-flexbox > .left-sidebar{
+	//		position: relative;
+	//		width:50%;
+	//	}
+	//	.holy-grail-flexbox > .right-sidebar {
+	//		width:50%;
+	//	}
+	//}
+
+	
+	// desktop breakpoint 
+	@media (min-width:10px) {
+		.holy-grail-flexbox > .header {
+			order:-2; // header first 
+			height: 80px;
+		}
+		.holy-grail-flexbox > .left-sidebar {
+			// left sidebar second (first in second row) 
+			order:-1; 
+			height: calc(100vh - 85px);
+			width: 260px; 
+			position: relative;
+			overflow-y: scroll;
+		}
+		.holy-grail-flexbox > .main-content {
+			width: calc(100% - 260px); 	// depending on the left-sidebar width!
+			overflow-y: scroll;
+		}
+		.holy-grail-flexbox > .right-sidebar {
+			width:10px;
+		}
+	}
+	*/
+	
+	body {
+		height: 100%;
+		/* height: 100vh; */
+		margin-top: 0px;
+		margin-bottom: 0px;
+		margin-right: 0px;
+		margin-left: 0px;
+		overflow-y: visible;
+	}
+
+	.smallText{
+		font-family:    Arial, Helvetica, sans-serif;
+		font-size:      12px;
+		font-weight:    normal;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	
+	.smallTextSelectable{
+		font-family:    Courier New;
+		font-size:      12px;
+		font-weight:    normal;
+	}
+	
+	.PsSpan{
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 14px;
+		text-align: center;
+		background-color: RoyalBlue ;
+		color: white;
+		width: 100%;
+		height: 18px;
+	}
+	
+	/* created with https://layout.bradwoods.io/ */
+	.layout {
+	  /* width: 100%; */
+	  height: 100vh;
+	  max-height: 100vh;
+	  display: grid;
+	  grid-template:
+	    "headerL headerR" 40px
+		"leftP mainP" 4fr
+		"leftP crossP" 1fr
+		/ 260px 1fr;
+	  gap: 0px 0px;
+	}
+
+	.headerL{
+		grid-area: headerL;
+		position: relative;
+	}
+	
+	.headerR{
+		grid-area: headerR;
+		background-color: white;
+		color: black;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 18px;
+		display: flex;
+		justify-content: center; /* Align horizontal */
+		align-items: center; /* Align vertical */
+
+		
+	}
+	
+	.leftP { 
+		grid-area: leftP;
+		overflow-y: scroll;	
+		width: 260px;
+		position: relative;
+		background-color: #F8F8F8;
+		background-color: Gainsboro;
+
+	}
+	.mainP { 
+		grid-area: mainP;
+		position: relative;
+		overflow-y: scroll;	
+		resize: vertical;
+		min-height: 100%;
+		max-height: auto;
+	}
+	
+	.crossP {
+		grid-area: crossP;
+		position: relative;
+		overflow-y: scroll;	
+		min-height: min-content;
+		max-height: auto;
+	}		
+	
+	.centerBtn {
+		width: 80%;
+		height: 70%;
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		background-color: darkBlue;
+		color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	
+  /* https://jsfiddle.net/y5sjdtoq/ */
+  /* <div id="textbox"> */
+  /* <p id="textboxText">Here is some example text that is about the same amount as I really have here, but I don't want to reveal what.</p> */
+  /* </div> */
+	#textbox {
+		left: 180px;
+		top: 420px;
+		height: auto;
+		padding: 20px;
+		display: inline-block;
+		width: 240px;
+		background-color: white;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	}
+
+	#textboxText {
+	  text-align: center;
+	  font-family: 'Roboto', sans-serif;
+	  font-style: italic;
+	  font-size: 20px;
+	  word-wrap: break-word;
+	}
+	
+	/* tooltips: */
+	/* https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip */
+	
+	
+	#dialog {
+	  position: absolute;
+	  z-index: 9;
+	  background-color: #f1f1f1;
+	  text-align: left;
+	  /*border: 1px solid #d3d3d3;*/
+	  padding: 4px;
+	}
+
+	#dialogHeader {
+	  padding: 0px;
+	  cursor: move;
+	  z-index: 10;
+	  background-color: #2196F3;
+	  color: #fff;
+	  font-family: Arial, Helvetica, sans-serif;
+	  font-weight: bold;
+	  font-size: 14px;
+	  text-align: center;
+	}
+	
+	 /* Tooltip container */
+	.tooltip {
+	  position: relative;
+	  display: inline-block;
+      margin-top: 0px;
+	  margin-bottom: 0px;
+	  margin-right: 0px;
+	  margin-left: 0px;
+	  margin: 0;
+	  /*border-bottom: 1px dotted black;*/ /* If you want dots under the hoverable text */
+	}
+
+	/* Tooltip text */
+	.tooltip .tooltiptext {
+	  visibility: hidden;
+	  width: 120px;
+	  background-color: #555;
+	  color: #fff;
+	  text-align: center;
+	  padding: 5px 0;
+	  border-radius: 6px;
+
+	  /* Position the tooltip text */
+	  position: absolute;
+	  z-index: 1;
+	  bottom: 150%;
+	  left: 100%;
+	  margin-left: -60px;
+
+	  /* Fade in tooltip */
+	  opacity: 0;
+	  transition: opacity 2.5s;
+	  
+	  font-family:    Arial, Helvetica, sans-serif;
+	  font-size:      12px;
+      font-weight:    normal;
+	}
+
+	/* Tooltip arrow */
+	.tooltip .tooltiptext::after {
+	  content: "";
+	  position: absolute;
+	  top: 100%;
+	  left: 10%;
+	  margin-left: -5px;
+	  border-width: 5px;
+	  border-style: solid;
+	  border-color: #555 transparent transparent transparent;
+
+	}
+
+	/* Show the tooltip text when you mouse over the tooltip container */
+	.tooltip:hover .tooltiptext {
+	  visibility: visible;
+	  opacity: 0.7;
+	} 
