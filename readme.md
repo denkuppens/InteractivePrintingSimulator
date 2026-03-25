@@ -1,5 +1,5 @@
 # Interactive Functional Inkjet Printing Simulator 💧💧💧
-This is an inkjet printing simulator which runs in locally in modern web browsers and can be used as an educational tool to see the effect of the most important parameters involved in functional and graphical inkjet printing. 
+This is an inkjet printing simulator which can be used as an educational tool to see the effect of the most important parameters involved in functional and graphical inkjet printing. 
 
 ![Print Simulator Animation](./images/Print_Simulator_Animation_small.gif "Interactive Functional Inkjet Printing Simulator"){width=600} 
 
