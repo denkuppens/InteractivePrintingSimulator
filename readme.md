@@ -1,7 +1,7 @@
 # Interactive Functional Inkjet Printing Simulator 💧💧💧
 This is an inkjet printing simulator which can be used as an educational tool to see the effect of the most important parameters involved in functional and graphical inkjet printing. 
 
-![Print Simulator Animation](./images/Print_Simulator_Animation_small.gif "Interactive Functional Inkjet Printing Simulator"){width=600} 
+![Print Simulator Animation](./images/Print_Simulator_Animation_small.gif "Interactive Functional Inkjet Printing Simulator")
 
 # Try it now
 <a href="https://denkuppens.github.io/InteractivePrintingSimulator" target="_blank">Click here to open the printing simulator.</a> (hold ctrl while clicking to open in a new tab)
