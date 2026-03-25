@@ -100,7 +100,7 @@ I'm working in the inkjet industry for a long time and I had to explain many tim
 ## Who am I and why am I making this tool available?
 As said, I've been working most of my long career in the inkjet printing industry. Started as an engineer, became system architect, development manager, product manager of inkjet printers and now I am in a strategic product manager role for a portfolio of coating machines and not only inkjet anymore. Because of this I am less technically involved in inkjet projects but because I love to share my expertise and have a warm hart for the inkjet ecosystem, I've decided to make this simulator open source and share it with the community.
 
-## Conctact
+## Contact
 [Via linkedIn](https://www.linkedin.com/in/dennis-kuppens-5753a92/)
 
 
