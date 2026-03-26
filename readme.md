@@ -128,7 +128,7 @@ As said, I've been working most of my long career in the inkjet printing industr
 
 ## Thanks to
 
-- ImageXpert who maintains [The Ultimate Industrial Inkjet Printhead Comparison Chart](https://imagexpert.com/the-ultimate-industrial-inkjet-printhead-comparison-chart/) which I used for the simulator printhead database. Thanks Kay Bell for sharing this with us 👍
+- ImageXpert who maintains [The Ultimate Industrial Inkjet Printhead Comparison Chart](https://imagexpert.com/the-ultimate-industrial-inkjet-printhead-comparison-chart/) which I used for the simulator printhead database. Thanks Kyle Pucci for sharing this with us 👍
 - [The Coding Train youtube channel](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw) for the P5.js tutorials
 
 ## License
